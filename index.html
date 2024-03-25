@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.scss">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Disalt</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="logo"><img src="img/logo.svg" alt=""></a>
+                <ul class="header__menu">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            <span>Главная</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            <span>Каталог</span>
+                            <img src="img/arrowDown.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            <span>Услуги</span>
+                            <img src="img/arrowDown.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            <span>Проекты</span>
+                            <img src="img/arrowDown.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <div class="header__contacts">
+                    <div class="header__whatsapp">
+                        <img src="img/whatsapp.svg" alt="">
+                        <a class="header__tel" href="tel:+78462540163">+7 846 25 40 163</a>
+                    </div>
+                    <button class="header__button">Заказать звонок</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="energi">
+            <div class="container">
+                <div class="energi__cont">
+                    <div class="energi__cont-text">
+                        <p class="energi__implication">В Самаре и по всей России</p>
+                        <p class="energi__title">Энергетическое оборудование</p>
+                        <p class="energi__text">Дизельные генераторы, осветительные мачты и блок-контейнера</p>
+                    </div>
+                    <div class="energi__button">
+                        <button class="energi__discuss">Обсудить проект</button>
+                        <button class="energi__catalog">Каталог</button>
+                    </div>
+                </div>
+                <img src="img/energiImg.svg" alt="">
+            </div>
+            <div class="container">
+                <div class="energi__partner">
+                    <p class="energi__partner-text">Наши партнёры:</p>
+                    <div class="energi__partner-img">
+                        <img src="img/partner1.svg" alt="">
+                        <img src="img/partner2.svg" alt="">
+                        <img src="img/partner3.svg" alt="">
+                        <img src="img/partner4.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="item">более 10 лет в сфере</div>
+            <div class="item portfolio__item-color">производство 5000м2</div>
+            <div class="item">более 20 сотрудников</div>
+            <div class="item">гарантии до 7 лет</div>
+            <div class="item portfolio__item-color">по всей России</div>
+            <div class="item">более 30 сотрудников</div>
+            <div class="item">более 10 лет в сфере</div>
+            <div class="item portfolio__item-color">производство 5000м2</div>
+            <div class="item">более 20 сотрудников</div>
+        </div>
+        <div class="selectGenerator">
+            <p class="selectGenerator__title">Выберите дизель генератор</p>
+            <p class="selectGenerator__text">Дизель генераторы от компании ДИЗАЛЬТ</p>
+            <p class="selectGenerator__role-title">Назначение электростанции:</p>
+            <div class="selectGenerator__role">
+                <div class="mainSource">
+                    <input type="radio" name="SourceEnergy" id="mainSourceEnergy" checked>
+                    <label for="mainSourceEnergy">Основной источник энергии</label>
+                </div>
+                <div class="backupEnergy">
+                    <input type="radio" name="SourceEnergy" id="backupEnergySource">
+                    <label for="backupEnergySource">Резервный источник энергии</label>
+                </div>
+            </div>
+            <div class="electricalCapacity">
+                <p class="electricalCapacity__text">Электрическая мощность:</p>
+                <div class="electricalCapacity__cont">
+                    <div class="electricalCapacity__button">
+                        <div class="electricalkBt">
+                            <input type="radio" name="electricalCapacity__button" id="electricalkBt__id" checked>
+                            <label for="electricalkBt__id">кВт</label>
+                        </div>
+                        <div class="electricalkBa">
+                            <input type="radio" name="electricalCapacity__button" id="electricalkBa__id">
+                            <label for="electricalkBa__id">кВа</label>
+                        </div>
+                    </div>
+                    <div class="electricalCapacity__input-block">
+                        <div class="electricalCapacity__input-cont">
+                            <p>от</p>
+                            <input type="text" placeholder="_____" class="electricalCapacity__input">
+                        </div>
+                        <div class="electricalCapacity__input-cont">
+                            <p>до</p>
+                            <input type="text" placeholder="_____" class="electricalCapacity__input">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="electricalPower">
+                <p class="electricalPower__text">Мощность:</p>
+                <div id="slidecontainer">
+                    <input type="range" min="1" max="100" value="60" class="slider" id="myRange">
+                    <div class="slideContainerNumber">
+                        <p class="slideContainerNumber4">400</p>
+                        <p class="slideContainerNumber6">600</p>
+                        <p class="slideContainerNumber8">800</p>
+                        <p class="slideContainerNumber10">1000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="engine">
+                <p class="engine__title">Двигатель:</p>
+                <div class="engine__flex">
+                    <div class="engine__import">
+                        <p class="engine__text">Импортные (Европа, Турция, Корея)</p>
+                        <div class="engine__cont">
+                            <div>
+                                <input type="checkbox" id="Perkins" name="Perkins" />
+                                <label for="Perkins">Perkins</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="Cummins" name="Cummins" />
+                                <label for="Cummins">Cummins</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="Iveco" name="Iveco" />
+                                <label for="Iveco">Iveco</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="Mitsubishi" name="Mitsubishi" />
+                                <label for="Mitsubishi">Mitsubishi</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="Volvo-Penta" name="Volvo-Penta" />
+                                <label for="Volvo-Penta">Volvo Penta</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="John-Deere" name="John-Deere" />
+                                <label for="John-Deere">John Deere</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="YANMAR" name="YANMAR" />
+                                <label for="YANMAR">YANMAR</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="engine__home">
+                        <p class="engine__text">Отечественные</p>
+                        <div class="engine__cont">
+                            <div>
+                                <input type="checkbox" id="ММЗ" name="ММЗ" checked/>
+                                <label for="ММЗ">ММЗ</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="ЯМЗ" name="ЯМЗ" />
+                                <label for="ЯМЗ">ЯМЗ</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="engine__China">
+                        <p class="engine__text">Китай</p>
+                        <div class="engine__cont">
+                            <div>
+                                <input type="checkbox" id="Baudouin" name="Baudouin"/>
+                                <label for="Baudouin">Baudouin</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="SDEC" name="SDEC"/>
+                                <label for="SDEC">SDEC</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="WEICHAI" name="WEICHAI"/>
+                                <label for="WEICHAI">WEICHAI</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="Ricardo" name="Ricardo"/>
+                                <label for="Ricardo">Ricardo</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="WOLING" name="WOLING"/>
+                                <label for="WOLING">WOLING</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="ALPHA-R" name="ALPHA-R"/>
+                                <label for="ALPHA-R">ALPHA-R</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="selectGenerator__button">Показать</button>
+        </div>
+        <div class="Bestsellers">
+            <div class="container">
+                <p class="bestsellers__title">Хиты продаж</p>
+                <div class="bestsellers__text-cont">
+                    <p class="bestsellers__text">Самые популярные дизельные электростанции с доставкой по всей России, гарантийным обслуживанием и запчастями в наличии.</p>
+                </div>
+                <div class="Bestsellers__cont">
+                    <div>          
+                        <input type="radio" id="SDPP" name="Bestsellers" onclick="showContent(1)" checked>
+                        <label for="SDPP">
+                            <p>Дизельные электростанции</p>
+                            <div class="line"></div>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="LightingMasts" name="Bestsellers" onclick="showContent(2)">
+                        <label for="LightingMasts">
+                            <p>Осветительные мачты</p>
+                            <div class="line"></div>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="BlockContainer" name="Bestsellers" onclick="showContent(3)">
+                        <label for="BlockContainer">
+                            <p>Блок-контейнера</p>
+                            <div class="line"></div>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="compressor" name="Bestsellers" onclick="showContent(4)">
+                        <label for="compressor">
+                            <p>Компрессора</p>
+                            <div class="line line4"></div>
+                        </label>
+                    </div>
+                </div>
+                <div id="content1" class="tabcontent">
+                    <div class="Bestsellers__content-cont">
+                        <div class="Bestsellers__content-item">
+                            <img src="img/engine.svg" alt="">
+                            <div class="Bestsellers__content-item-cont">
+                                <p class="Bestsellers__content-compani">Scania</p>
+                                <p class="Bestsellers__content-title">Дизельная электростанция АД680</p>
+                                <div class="Bestsellers__content-character">
+                                    <p class="Bestsellers__content-text">Основная мощность...........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Резервная мощность.........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Объем бака........................................................<span>2 л/ч</span></p>
+                                    <p class="Bestsellers__content-text">Расход топлива (75%).................................<span>2 л/ч</span></p>
+                                </div>
+                                <div class="Bestsellers__content-button">
+                                    <button class="Bestsellers__content-Basket">В корзину</button>
+                                    <button class="Bestsellers__content-particular">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Bestsellers__content-item">
+                            <img src="img/engine.svg" alt="">
+                            <div class="Bestsellers__content-item-cont">
+                                <p class="Bestsellers__content-compani">Scania</p>
+                                <p class="Bestsellers__content-title">Дизельная электростанция АД680</p>
+                                <div class="Bestsellers__content-character">
+                                    <p class="Bestsellers__content-text">Основная мощность...........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Резервная мощность.........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Объем бака........................................................<span>2 л/ч</span></p>
+                                    <p class="Bestsellers__content-text">Расход топлива (75%).................................<span>2 л/ч</span></p>
+                                </div>
+                                <div class="Bestsellers__content-button">
+                                    <button class="Bestsellers__content-Basket">В корзину</button>
+                                    <button class="Bestsellers__content-particular">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Bestsellers__content-item">
+                            <img src="img/engine.svg" alt="">
+                            <div class="Bestsellers__content-item-cont">
+                                <p class="Bestsellers__content-compani">Scania</p>
+                                <p class="Bestsellers__content-title">Дизельная электростанция АД680</p>
+                                <div class="Bestsellers__content-character">
+                                    <p class="Bestsellers__content-text">Основная мощность...........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Резервная мощность.........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Объем бака........................................................<span>2 л/ч</span></p>
+                                    <p class="Bestsellers__content-text">Расход топлива (75%).................................<span>2 л/ч</span></p>
+                                </div>
+                                <div class="Bestsellers__content-button">
+                                    <button class="Bestsellers__content-Basket">В корзину</button>
+                                    <button class="Bestsellers__content-particular">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Bestsellers__content-item">
+                            <img src="img/engine.svg" alt="">
+                            <div class="Bestsellers__content-item-cont">
+                                <p class="Bestsellers__content-compani">Scania</p>
+                                <p class="Bestsellers__content-title">Дизельная электростанция АД680</p>
+                                <div class="Bestsellers__content-character">
+                                    <p class="Bestsellers__content-text">Основная мощность...........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Резервная мощность.........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Объем бака........................................................<span>2 л/ч</span></p>
+                                    <p class="Bestsellers__content-text">Расход топлива (75%).................................<span>2 л/ч</span></p>
+                                </div>
+                                <div class="Bestsellers__content-button">
+                                    <button class="Bestsellers__content-Basket">В корзину</button>
+                                    <button class="Bestsellers__content-particular">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Bestsellers__content-item">
+                            <img src="img/engine.svg" alt="">
+                            <div class="Bestsellers__content-item-cont">
+                                <p class="Bestsellers__content-compani">Scania</p>
+                                <p class="Bestsellers__content-title">Дизельная электростанция АД680</p>
+                                <div class="Bestsellers__content-character">
+                                    <p class="Bestsellers__content-text">Основная мощность...........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Резервная мощность.........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Объем бака........................................................<span>2 л/ч</span></p>
+                                    <p class="Bestsellers__content-text">Расход топлива (75%).................................<span>2 л/ч</span></p>
+                                </div>
+                                <div class="Bestsellers__content-button">
+                                    <button class="Bestsellers__content-Basket">В корзину</button>
+                                    <button class="Bestsellers__content-particular">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Bestsellers__content-item">
+                            <img src="img/engine.svg" alt="">
+                            <div class="Bestsellers__content-item-cont">
+                                <p class="Bestsellers__content-compani">Scania</p>
+                                <p class="Bestsellers__content-title">Дизельная электростанция АД680</p>
+                                <div class="Bestsellers__content-character">
+                                    <p class="Bestsellers__content-text">Основная мощность...........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Резервная мощность.........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Объем бака........................................................<span>2 л/ч</span></p>
+                                    <p class="Bestsellers__content-text">Расход топлива (75%).................................<span>2 л/ч</span></p>
+                                </div>
+                                <div class="Bestsellers__content-button">
+                                    <button class="Bestsellers__content-Basket">В корзину</button>
+                                    <button class="Bestsellers__content-particular">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="content2" class="tabcontent">
+                    <div class="Bestsellers__content-cont">
+                        <div class="Bestsellers__content-item">
+                            <img src="img/engine.svg" alt="">
+                            <div class="Bestsellers__content-item-cont">
+                                <p class="Bestsellers__content-compani">Scania</p>
+                                <p class="Bestsellers__content-title">Дизельная электростанция АД680</p>
+                                <div class="Bestsellers__content-character">
+                                    <p class="Bestsellers__content-text">Основная мощность...........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Резервная мощность.........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Объем бака........................................................<span>2 л/ч</span></p>
+                                    <p class="Bestsellers__content-text">Расход топлива (75%).................................<span>2 л/ч</span></p>
+                                </div>
+                                <div class="Bestsellers__content-button">
+                                    <button class="Bestsellers__content-Basket">В корзину</button>
+                                    <button class="Bestsellers__content-particular">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Bestsellers__content-item">
+                            <img src="img/engine.svg" alt="">
+                            <div class="Bestsellers__content-item-cont">
+                                <p class="Bestsellers__content-compani">Scania</p>
+                                <p class="Bestsellers__content-title">Дизельная электростанция АД680</p>
+                                <div class="Bestsellers__content-character">
+                                    <p class="Bestsellers__content-text">Основная мощность...........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Резервная мощность.........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Объем бака........................................................<span>2 л/ч</span></p>
+                                    <p class="Bestsellers__content-text">Расход топлива (75%).................................<span>2 л/ч</span></p>
+                                </div>
+                                <div class="Bestsellers__content-button">
+                                    <button class="Bestsellers__content-Basket">В корзину</button>
+                                    <button class="Bestsellers__content-particular">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Bestsellers__content-item">
+                            <img src="img/engine.svg" alt="">
+                            <div class="Bestsellers__content-item-cont">
+                                <p class="Bestsellers__content-compani">Scania</p>
+                                <p class="Bestsellers__content-title">Дизельная электростанция АД680</p>
+                                <div class="Bestsellers__content-character">
+                                    <p class="Bestsellers__content-text">Основная мощность...........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Резервная мощность.........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Объем бака........................................................<span>2 л/ч</span></p>
+                                    <p class="Bestsellers__content-text">Расход топлива (75%).................................<span>2 л/ч</span></p>
+                                </div>
+                                <div class="Bestsellers__content-button">
+                                    <button class="Bestsellers__content-Basket">В корзину</button>
+                                    <button class="Bestsellers__content-particular">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Bestsellers__content-item">
+                            <img src="img/engine.svg" alt="">
+                            <div class="Bestsellers__content-item-cont">
+                                <p class="Bestsellers__content-compani">Scania</p>
+                                <p class="Bestsellers__content-title">Дизельная электростанция АД680</p>
+                                <div class="Bestsellers__content-character">
+                                    <p class="Bestsellers__content-text">Основная мощность...........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Резервная мощность.........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Объем бака........................................................<span>2 л/ч</span></p>
+                                    <p class="Bestsellers__content-text">Расход топлива (75%).................................<span>2 л/ч</span></p>
+                                </div>
+                                <div class="Bestsellers__content-button">
+                                    <button class="Bestsellers__content-Basket">В корзину</button>
+                                    <button class="Bestsellers__content-particular">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Bestsellers__content-item">
+                            <img src="img/engine.svg" alt="">
+                            <div class="Bestsellers__content-item-cont">
+                                <p class="Bestsellers__content-compani">Scania</p>
+                                <p class="Bestsellers__content-title">Дизельная электростанция АД680</p>
+                                <div class="Bestsellers__content-character">
+                                    <p class="Bestsellers__content-text">Основная мощность...........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Резервная мощность.........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Объем бака........................................................<span>2 л/ч</span></p>
+                                    <p class="Bestsellers__content-text">Расход топлива (75%).................................<span>2 л/ч</span></p>
+                                </div>
+                                <div class="Bestsellers__content-button">
+                                    <button class="Bestsellers__content-Basket">В корзину</button>
+                                    <button class="Bestsellers__content-particular">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Bestsellers__content-item">
+                            <img src="img/engine.svg" alt="">
+                            <div class="Bestsellers__content-item-cont">
+                                <p class="Bestsellers__content-compani">Scania</p>
+                                <p class="Bestsellers__content-title">Дизельная электростанция АД680</p>
+                                <div class="Bestsellers__content-character">
+                                    <p class="Bestsellers__content-text">Основная мощность...........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Резервная мощность.........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Объем бака........................................................<span>2 л/ч</span></p>
+                                    <p class="Bestsellers__content-text">Расход топлива (75%).................................<span>2 л/ч</span></p>
+                                </div>
+                                <div class="Bestsellers__content-button">
+                                    <button class="Bestsellers__content-Basket">В корзину</button>
+                                    <button class="Bestsellers__content-particular">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="content3" class="tabcontent">
+                    <div class="Bestsellers__content-cont">
+                        <div class="Bestsellers__content-item">
+                            <img src="img/engine.svg" alt="">
+                            <div class="Bestsellers__content-item-cont">
+                                <p class="Bestsellers__content-compani">Scania</p>
+                                <p class="Bestsellers__content-title">Дизельная электростанция АД680</p>
+                                <div class="Bestsellers__content-character">
+                                    <p class="Bestsellers__content-text">Основная мощность...........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Резервная мощность.........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Объем бака........................................................<span>2 л/ч</span></p>
+                                    <p class="Bestsellers__content-text">Расход топлива (75%).................................<span>2 л/ч</span></p>
+                                </div>
+                                <div class="Bestsellers__content-button">
+                                    <button class="Bestsellers__content-Basket">В корзину</button>
+                                    <button class="Bestsellers__content-particular">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Bestsellers__content-item">
+                            <img src="img/engine.svg" alt="">
+                            <div class="Bestsellers__content-item-cont">
+                                <p class="Bestsellers__content-compani">Scania</p>
+                                <p class="Bestsellers__content-title">Дизельная электростанция АД680</p>
+                                <div class="Bestsellers__content-character">
+                                    <p class="Bestsellers__content-text">Основная мощность...........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Резервная мощность.........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Объем бака........................................................<span>2 л/ч</span></p>
+                                    <p class="Bestsellers__content-text">Расход топлива (75%).................................<span>2 л/ч</span></p>
+                                </div>
+                                <div class="Bestsellers__content-button">
+                                    <button class="Bestsellers__content-Basket">В корзину</button>
+                                    <button class="Bestsellers__content-particular">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Bestsellers__content-item">
+                            <img src="img/engine.svg" alt="">
+                            <div class="Bestsellers__content-item-cont">
+                                <p class="Bestsellers__content-compani">Scania</p>
+                                <p class="Bestsellers__content-title">Дизельная электростанция АД680</p>
+                                <div class="Bestsellers__content-character">
+                                    <p class="Bestsellers__content-text">Основная мощность...........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Резервная мощность.........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Объем бака........................................................<span>2 л/ч</span></p>
+                                    <p class="Bestsellers__content-text">Расход топлива (75%).................................<span>2 л/ч</span></p>
+                                </div>
+                                <div class="Bestsellers__content-button">
+                                    <button class="Bestsellers__content-Basket">В корзину</button>
+                                    <button class="Bestsellers__content-particular">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Bestsellers__content-item">
+                            <img src="img/engine.svg" alt="">
+                            <div class="Bestsellers__content-item-cont">
+                                <p class="Bestsellers__content-compani">Scania</p>
+                                <p class="Bestsellers__content-title">Дизельная электростанция АД680</p>
+                                <div class="Bestsellers__content-character">
+                                    <p class="Bestsellers__content-text">Основная мощность...........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Резервная мощность.........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Объем бака........................................................<span>2 л/ч</span></p>
+                                    <p class="Bestsellers__content-text">Расход топлива (75%).................................<span>2 л/ч</span></p>
+                                </div>
+                                <div class="Bestsellers__content-button">
+                                    <button class="Bestsellers__content-Basket">В корзину</button>
+                                    <button class="Bestsellers__content-particular">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Bestsellers__content-item">
+                            <img src="img/engine.svg" alt="">
+                            <div class="Bestsellers__content-item-cont">
+                                <p class="Bestsellers__content-compani">Scania</p>
+                                <p class="Bestsellers__content-title">Дизельная электростанция АД680</p>
+                                <div class="Bestsellers__content-character">
+                                    <p class="Bestsellers__content-text">Основная мощность...........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Резервная мощность.........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Объем бака........................................................<span>2 л/ч</span></p>
+                                    <p class="Bestsellers__content-text">Расход топлива (75%).................................<span>2 л/ч</span></p>
+                                </div>
+                                <div class="Bestsellers__content-button">
+                                    <button class="Bestsellers__content-Basket">В корзину</button>
+                                    <button class="Bestsellers__content-particular">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Bestsellers__content-item">
+                            <img src="img/engine.svg" alt="">
+                            <div class="Bestsellers__content-item-cont">
+                                <p class="Bestsellers__content-compani">Scania</p>
+                                <p class="Bestsellers__content-title">Дизельная электростанция АД680</p>
+                                <div class="Bestsellers__content-character">
+                                    <p class="Bestsellers__content-text">Основная мощность...........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Резервная мощность.........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Объем бака........................................................<span>2 л/ч</span></p>
+                                    <p class="Bestsellers__content-text">Расход топлива (75%).................................<span>2 л/ч</span></p>
+                                </div>
+                                <div class="Bestsellers__content-button">
+                                    <button class="Bestsellers__content-Basket">В корзину</button>
+                                    <button class="Bestsellers__content-particular">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="content4" class="tabcontent">
+                    <div class="Bestsellers__content-cont">
+                        <div class="Bestsellers__content-item">
+                            <img src="img/engine.svg" alt="">
+                            <div class="Bestsellers__content-item-cont">
+                                <p class="Bestsellers__content-compani">Scania</p>
+                                <p class="Bestsellers__content-title">Дизельная электростанция АД680</p>
+                                <div class="Bestsellers__content-character">
+                                    <p class="Bestsellers__content-text">Основная мощность...........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Резервная мощность.........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Объем бака........................................................<span>2 л/ч</span></p>
+                                    <p class="Bestsellers__content-text">Расход топлива (75%).................................<span>2 л/ч</span></p>
+                                </div>
+                                <div class="Bestsellers__content-button">
+                                    <button class="Bestsellers__content-Basket">В корзину</button>
+                                    <button class="Bestsellers__content-particular">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Bestsellers__content-item">
+                            <img src="img/engine.svg" alt="">
+                            <div class="Bestsellers__content-item-cont">
+                                <p class="Bestsellers__content-compani">Scania</p>
+                                <p class="Bestsellers__content-title">Дизельная электростанция АД680</p>
+                                <div class="Bestsellers__content-character">
+                                    <p class="Bestsellers__content-text">Основная мощность...........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Резервная мощность.........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Объем бака........................................................<span>2 л/ч</span></p>
+                                    <p class="Bestsellers__content-text">Расход топлива (75%).................................<span>2 л/ч</span></p>
+                                </div>
+                                <div class="Bestsellers__content-button">
+                                    <button class="Bestsellers__content-Basket">В корзину</button>
+                                    <button class="Bestsellers__content-particular">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Bestsellers__content-item">
+                            <img src="img/engine.svg" alt="">
+                            <div class="Bestsellers__content-item-cont">
+                                <p class="Bestsellers__content-compani">Scania</p>
+                                <p class="Bestsellers__content-title">Дизельная электростанция АД680</p>
+                                <div class="Bestsellers__content-character">
+                                    <p class="Bestsellers__content-text">Основная мощность...........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Резервная мощность.........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Объем бака........................................................<span>2 л/ч</span></p>
+                                    <p class="Bestsellers__content-text">Расход топлива (75%).................................<span>2 л/ч</span></p>
+                                </div>
+                                <div class="Bestsellers__content-button">
+                                    <button class="Bestsellers__content-Basket">В корзину</button>
+                                    <button class="Bestsellers__content-particular">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Bestsellers__content-item">
+                            <img src="img/engine.svg" alt="">
+                            <div class="Bestsellers__content-item-cont">
+                                <p class="Bestsellers__content-compani">Scania</p>
+                                <p class="Bestsellers__content-title">Дизельная электростанция АД680</p>
+                                <div class="Bestsellers__content-character">
+                                    <p class="Bestsellers__content-text">Основная мощность...........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Резервная мощность.........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Объем бака........................................................<span>2 л/ч</span></p>
+                                    <p class="Bestsellers__content-text">Расход топлива (75%).................................<span>2 л/ч</span></p>
+                                </div>
+                                <div class="Bestsellers__content-button">
+                                    <button class="Bestsellers__content-Basket">В корзину</button>
+                                    <button class="Bestsellers__content-particular">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Bestsellers__content-item">
+                            <img src="img/engine.svg" alt="">
+                            <div class="Bestsellers__content-item-cont">
+                                <p class="Bestsellers__content-compani">Scania</p>
+                                <p class="Bestsellers__content-title">Дизельная электростанция АД680</p>
+                                <div class="Bestsellers__content-character">
+                                    <p class="Bestsellers__content-text">Основная мощность...........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Резервная мощность.........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Объем бака........................................................<span>2 л/ч</span></p>
+                                    <p class="Bestsellers__content-text">Расход топлива (75%).................................<span>2 л/ч</span></p>
+                                </div>
+                                <div class="Bestsellers__content-button">
+                                    <button class="Bestsellers__content-Basket">В корзину</button>
+                                    <button class="Bestsellers__content-particular">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Bestsellers__content-item">
+                            <img src="img/engine.svg" alt="">
+                            <div class="Bestsellers__content-item-cont">
+                                <p class="Bestsellers__content-compani">Scania</p>
+                                <p class="Bestsellers__content-title">Дизельная электростанция АД680</p>
+                                <div class="Bestsellers__content-character">
+                                    <p class="Bestsellers__content-text">Основная мощность...........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Резервная мощность.........<span>12 кВт / 15 кВa</span></p>
+                                    <p class="Bestsellers__content-text">Объем бака........................................................<span>2 л/ч</span></p>
+                                    <p class="Bestsellers__content-text">Расход топлива (75%).................................<span>2 л/ч</span></p>
+                                </div>
+                                <div class="Bestsellers__content-button">
+                                    <button class="Bestsellers__content-Basket">В корзину</button>
+                                    <button class="Bestsellers__content-particular">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Bestsellers__button-cont">
+                    <button class="Bestsellers__button">Смотреть все</button>
+                </div>
+            </div>
+        </div>
+        <div class="recall">
+            <div class="container">
+                <p class="recall__title">Отзывы</p>
+                <div class="recall__cont">
+                    <div class="recall__card">
+                        <div class="reacll__img-cont">
+                            <img src="img/recalImg.svg" alt="" class="recall__img">
+                        </div>
+                        <p class="recal__text">Здесь будет написанный нами отзыв. Если вдруг у вас они уже где-то имеются,  можно вставить</p>
+                        <div class="recal__star">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                        </div>
+                        <p class="recall__name">Имя Фамилия/Компания</p>
+                    </div>
+                    <div class="recall__card">
+                        <div class="reacll__img-cont">
+                            <img src="img/recalImg.svg" alt="" class="recall__img">
+                        </div>
+                        <p class="recal__text">Здесь будет написанный нами отзыв. Если вдруг у вас они уже где-то имеются,  можно вставить</p>
+                        <div class="recal__star">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                        </div>
+                        <p class="recall__name">Имя Фамилия/Компания</p>
+                    </div>
+                    <div class="recall__card">
+                        <div class="reacll__img-cont">
+                            <img src="img/recalImg.svg" alt="" class="recall__img">
+                        </div>
+                        <p class="recal__text">Здесь будет написанный нами отзыв. Если вдруг у вас они уже где-то имеются,  можно вставить</p>
+                        <div class="recal__star">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                        </div>
+                        <p class="recall__name">Имя Фамилия/Компания</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="questions">
+            <div class="container">
+                <p class="questions__title">Ответы на вопросы</p>
+                <p class="question__text">Ответили на самые частозадаваемые вами вопросы:</p>
+                <div class="QuestionAnswer">
+                    <div class="QuestionAnswer__blocks">
+                        <div class="collapse">
+                            <div class="collapse__content">
+                                <p>КАКИЕ У ВАС ВАРИАНТЫ ОПЛАТЫ?</p>
+                                <img src="./img/needle.svg" />
+                            </div>
+                            <div class="wrapper">
+                                <p class="list">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="collapse">
+                            <div class="collapse__content">
+                                <p>куда вы можете провести доставку?</p>
+                                <img src="./img/needle.svg" />
+                            </div>
+                            <div class="wrapper">
+                                <p class="list">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="collapse">
+                            <div class="collapse__content">
+                                <p>помогаете ли вы с настройкой оборудования?</p>
+                                <img src="./img/needle.svg" />
+                            </div>
+                            <div class="wrapper">
+                                <p class="list">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="collapse">
+                            <div class="collapse__content">
+                                <p>сами ли вы собираете генераторы?</p>
+                                <img src="./img/needle.svg" />
+                            </div>
+                            <div class="wrapper">
+                                <p class="list">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="collapse">
+                            <div class="collapse__content">
+                                <p>Сколько времени ПРОХОДИТ с момента заявки до доставки?</p>
+                                <img src="./img/needle.svg" />
+                            </div>
+                            <div class="wrapper">
+                                <p class="list">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stillQuestions">
+                    <div class="stillQuestions__cont">
+                        <p class="stillQuestions__title">Остались вопросы?</p>
+                        <p class="stillQuestions__text">Оставьте свои контакты и мы обязательно с вами свяжемся</p>
+                        <div class="stillQuestions__input-cont">
+                            <input type="text" class="stillQuestions__input" placeholder="Имя">
+                            <input type="text" class="stillQuestions__input" placeholder="Номер телефона">
+                        </div>
+                        <div class="stillQuestions__inputButton">
+                            <label>
+                                <input type="checkbox" id="stillQuestions__checkbox">
+                                <span class="checkbox"></span>
+                            </label>
+                            <label class="stillQuestions__checkbox-text" for="stillQuestions__checkbox">Запросить прайс-лист</label>
+                        </div>
+                        <div class="stillQuestions__politic-cont">
+                            <p class="stillQuestions__politic">Нажимая на кнопку “Отправить” вы соглашаетесь с<a href="#"> политикой конфиденциальности</a></p>
+                            <button class="stillQuestions__button">Отправить</button>
+                        </div>
+                    </div>
+                    <img src="img/stillQuestionsImg.svg" alt="" class="stillQuestionsImg">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__menu">
+                <div class="footer__menuOne">
+                    <div class="footer__menu-item"><a href="#" class="footer__menu-link">Главная</a></div>
+                    <div class="footer__menu-item"><a href="#" class="footer__menu-link">Продукция</a></div>
+                    <div class="footer__menu-item"><a href="#" class="footer__menu-link">Комплектующие</a></div>
+                </div>
+                <div class="footer__menuTwo">
+                    <div class="footer__logo"><a href="index.html"><img src="img/logo.svg" alt=""></a></div>
+                    <div class="footer__contact">
+                        <a href="mailto:info@diz-alt.ru" class="footer__menu-link">info@diz-alt.ru</a>
+                        <a href="tel:+78462540163" class="footer__menu-link">+7 846 25 40 163</a>
+                    </div>
+                </div>
+                <div class="footer__menuOne footer__menuTwo">
+                    <div class="footer__menu-item"><a href="#" class="footer__menu-link">Услуги</a></div>
+                    <div class="footer__menu-item"><a href="#" class="footer__menu-link">Поставщикам</a></div>
+                    <div class="footer__menu-item"><a href="#" class="footer__menu-link">Контакты</a></div>
+                </div>
+            </div>
+            <div class="footer__line"></div>
+            <div class="footer__info">
+                <p class="footer__info-text">2023, ООО «ДИЗАЛЬТ» — производство и продажа дизельных электростанций</p>
+                <div class="footer__info-cont">
+                    <a href="https://diz-alt.ru/soglashenie-ob-edo/" class="footer__info-link">Соглашение об ЭДО</a>
+                    <a href="https://diz-alt.ru/juridicheska-informaciya/" class="footer__info-link">Правовая информация</a>
+                    <a href="https://diz-alt.ru/soglasie-na-obrabotku-personalnyh-dannyh/" class="footer__info-link">Политика защиты и обработки персональных данных</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
