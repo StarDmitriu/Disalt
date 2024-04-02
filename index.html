@@ -15,7 +15,7 @@
         <div class="container">
             <div class="header__inner">
                 <a href="#" class="logo"><img src="img/logo.svg" alt=""></a>
-                <ul class="header__menu">
+                <ul class="header__menu" id="header__menu">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">
                             <span>Главная</span>
@@ -45,10 +45,13 @@
                 </ul>
                 <div class="header__contacts">
                     <div class="header__whatsapp">
-                        <img src="img/whatsapp.svg" alt="">
+                        <a href="tel:+78462540163"><img src="img/whatsapp.svg" alt=""></a>
                         <a class="header__tel" href="tel:+78462540163">+7 846 25 40 163</a>
                     </div>
-                    <button class="header__button">Заказать звонок</button>
+                    <button class="header__button header__buttonNone">Заказать звонок</button>
+                    <div class="burger">
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -62,6 +65,7 @@
                         <p class="energi__title">Энергетическое оборудование</p>
                         <p class="energi__text">Дизельные генераторы, осветительные мачты и блок-контейнера</p>
                     </div>
+                    <img src="img/energiImg.png" alt="" class="energiImg energiImgNone">
                     <div class="energi__button">
                         <button class="energi__discuss">Обсудить проект</button>
                         <button class="energi__catalog">Каталог</button>
@@ -896,6 +900,7 @@
     </footer>
 
 
+    <script src="js/header.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
